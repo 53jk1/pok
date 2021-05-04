@@ -8,7 +8,7 @@ go run . >> wyniki.txt
 ```
 # 03
 ```
-go run . >> wyniki.txt
+go run .
 ```
 # 04
 ```
