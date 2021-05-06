@@ -1,6 +1,6 @@
 # 01
 ```
-go run . >> wynik.txt
+go run . >> data.txt
 ```
 # 02
 ```
