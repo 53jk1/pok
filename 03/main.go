@@ -108,26 +108,26 @@ func plotData(path string, xys plotter.XYs) error {
 	p.Add(s)
 
 	// L on out.png
-	l, err := plotter.NewLine(plotter.XYs{{0, 0}, {3, 3}})
+	l, err := plotter.NewLine(plotter.XYs{{1, 1}, {3, 3}})
 
 	if err != nil {
 		return fmt.Errorf("could not create line: %v", err)
 	}
 	p.Add(l)
 
-	l, err = plotter.NewLine(plotter.XYs{{0, 0}, {3, 4}})
+	// l, err = plotter.NewLine(plotter.XYs{{0, 0}, {3, 4}})
 
-	if err != nil {
-		return fmt.Errorf("could not create line: %v", err)
-	}
-	p.Add(l)
+	// if err != nil {
+	// 	return fmt.Errorf("could not create line: %v", err)
+	// }
+	// p.Add(l)
 
-	l, err = plotter.NewLine(plotter.XYs{{0, 0}, {3, 5}})
+	// l, err = plotter.NewLine(plotter.XYs{{0, 0}, {3, 5}})
 
-	if err != nil {
-		return fmt.Errorf("could not create line: %v", err)
-	}
-	p.Add(l)
+	// if err != nil {
+	// 	return fmt.Errorf("could not create line: %v", err)
+	// }
+	// p.Add(l)
 
 	wt, err := p.WriterTo(512, 512, "png")
 	if err != nil {
